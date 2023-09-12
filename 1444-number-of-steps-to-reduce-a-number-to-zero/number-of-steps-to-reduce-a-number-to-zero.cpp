@@ -9,10 +9,12 @@ public:
             if(num % 2 != 0){
                 num-=1;
                 count +=1; 
+            } else{
+                num /= 2;
+                count +=1;
             }
-            num /= 2;
-            count +=1;
+           
         }
-        return count-1;
+        return count;
     }
 };
